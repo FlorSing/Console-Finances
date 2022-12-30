@@ -155,10 +155,10 @@ array.sort(function(a, b){return a - b});
 sortedChange = changeProfits.sort(function(a, b){return a - b});
 
     
-console.log("Greatest Increase in Profits:",finances[findDate1][0], sortedChange[sortedChange.length-1].toFixed(2), );
+console.log("Greatest Increase in Profits:",finances[findDate1][0], "(",sortedChange[sortedChange.length-1].toFixed(2),")" );
 console.log();
 
-console.log("Greatest Decrease in Profits:",finances[findDate2][0], sortedChange[0].toFixed(2)); 
+console.log("Greatest Decrease in Profits:",finances[findDate2][0],"(", sortedChange[0].toFixed(2),")"); 
 console.log();
 
 /*
