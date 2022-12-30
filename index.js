@@ -87,4 +87,21 @@ var finances = [
 ['Feb-2017', 671099]
 ];
 
-console.log('hello');
+console.log("Total number of months:",finances.length);
+console.log("Date from:", finances[0][0]);
+console.log("Date to:",finances[85][0]);
+
+let profitsList = []
+for (let i = 0; i < finances.length; i++) {
+    profitsList.push(finances[i][1]);
+};
+
+
+function myFunction(total, value) {
+    return total + value;
+  };
+
+totalProfits = profitsList.reduce(myFunction);
+console.log("Total Profits:",totalProfits.toFixed(2));
+averageProfits = totalProfits/finances.length;
+console.log("Average profits over the whole period:",averageProfits.toFixed(2));
