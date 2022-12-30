@@ -96,6 +96,7 @@ for (let i = 0; i < finances.length; i++) {
     profitsList.push(finances[i][1]);
 };
 
+console.log(profitsList);
 
 function myFunction(total, value) {
     return total + value;
@@ -103,5 +104,59 @@ function myFunction(total, value) {
 
 totalProfits = profitsList.reduce(myFunction);
 console.log("Total Profits:",totalProfits.toFixed(2));
-averageProfits = totalProfits/finances.length;
+
+let averageProfits = totalProfits/finances.length;
 console.log("Average profits over the whole period:",averageProfits.toFixed(2));
+
+changeProfits = []
+for (let i = 1; i < profitsList.length; i++) {
+   changeProfits.push(profitsList[i] - profitsList[i-1]);
+};
+console.log(changeProfits);
+
+totalChange = changeProfits.reduce(myFunction);
+let aveChange = totalChange/changeProfits.length;
+console.log('Average change in profits:',aveChange.toFixed(2));
+
+
+let findDate1 = changeProfits.indexOf(-2196167) + 1;
+
+console.log(findDate1);
+
+let findDate2 = changeProfits.indexOf(1926159) + 1;
+
+console.log(findDate2);
+
+
+
+
+
+/*to sort:
+array.sort(function(a, b){return a - b});
+*/
+
+sortedChange = changeProfits.sort(function(a, b){return a - b});
+
+    
+console.log("Greatest Increase in Profits:",sortedChange[sortedChange.length-1]);
+console.log(finances[findDate1]);
+
+console.log("Greatest Decrease in Profits:",sortedChange[0]); 
+console.log(finances[findDate2]);
+
+
+console.log(sortedChange);
+/*
+let findDate1 = changeProfits.indexOf(-2196167) + 1;
+console.log(findDate1);
+
+let findDate2 = changeProfits.indexOf(1926159) + 1;
+console.log(findDate2);
+
+console.log(changeProfits);
+*/
+
+
+
+
+
