@@ -89,7 +89,7 @@ var finances = [
 
 
 console.log("Financial Analysis");
-console.log("=====================");
+console.log("==============================");
 
 
 
@@ -108,6 +108,8 @@ console.log(profitsList);
 
 
 */
+
+// function to get the total value
 function myFunction(total, value) {
     return total + value;
   };
@@ -119,6 +121,8 @@ let averageProfits = totalProfits/finances.length;
 /*
 console.log("Average profits over the whole period:",averageProfits.toFixed(2));
 */
+
+//create list for results generated in change of profits
 changeProfits = []
 for (let i = 1; i < profitsList.length; i++) {
    changeProfits.push(profitsList[i] - profitsList[i-1]);
