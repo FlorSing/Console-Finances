@@ -88,8 +88,8 @@ var finances = [
 ];
 
 
-console.log("Financial Analysis");
-console.log("==============================");
+console.log("\nFinancial Analysis");
+console.log("==============================\n");
 
 
 
@@ -115,7 +115,7 @@ function myFunction(total, value) {
   };
 
 totalProfits = profitsList.reduce(myFunction);
-console.log("Total Profits:",totalProfits.toFixed(2));
+console.log("Total Profits: " + "$ "+ totalProfits.toFixed(2));
 
 let averageProfits = totalProfits/finances.length;
 /*
@@ -135,7 +135,7 @@ console.log(changeProfits);
 
 totalChange = changeProfits.reduce(myFunction);
 let aveChange = totalChange/changeProfits.length;
-console.log('Average change in profits:',aveChange.toFixed(2));
+console.log('Average change in profits: '+ "$ "+  aveChange.toFixed(2));
 
 
 let findDate1 = changeProfits.indexOf(-2196167) + 1;
@@ -159,10 +159,10 @@ array.sort(function(a, b){return a - b});
 sortedChange = changeProfits.sort(function(a, b){return a - b});
 
     
-console.log("Greatest Increase in Profits:",finances[findDate1][0], "(",sortedChange[sortedChange.length-1].toFixed(2),")" );
+console.log("Greatest Increase in Profits:",finances[findDate2][0], "(" + "$ " + sortedChange[sortedChange.length-1].toFixed(2),")" );
 console.log();
 
-console.log("Greatest Decrease in Profits:",finances[findDate2][0],"(", sortedChange[0].toFixed(2),")"); 
+console.log("Greatest Decrease in Profits:",finances[findDate1][0],"(" + "$ "+ sortedChange[0].toFixed(2),")"); 
 console.log();
 
 /*
