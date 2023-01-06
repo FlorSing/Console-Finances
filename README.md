@@ -8,8 +8,7 @@ Will do a simple analysis using JavaScript and publish the output.
 
 A print screen of the output is sampled below:
 
-![Screenshot_20230106_055928](https://user-images.githubusercontent.com/118206899/211071263-0ed0b87d-0ab2-4a2f-be66-9e7e0838b553.png)
-
+![image](https://user-images.githubusercontent.com/118206899/211074430-4e7a28ed-644a-4c79-a166-887c50d6cf51.png)
 
 
 This forms part of the skills bootcamp - module 04 challenge.
